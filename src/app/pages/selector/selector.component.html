@@ -3,7 +3,7 @@
     <div class="logo">AUTOROBOTTECH – SERVICES</div>
     <nav class="nav">
       <a href="https://autorobottech.hu/">Vissza a főoldalra</a>
-      <a href="https://portfolio.autorobottech.hu/" target="_blank" rel="noopener" class="primary-link">
+      <a href="https://portfolio.autorobottech.hu/" rel="noopener" class="primary-link">
         Portfólió →
       </a>
     </nav>
@@ -42,7 +42,7 @@
             <li>SEO, sebesség, GDPR-tudatos felépítés</li>
           </ul>
           <div class="service-footer">
-            <a class="service-link" href="/web-automatizacio.html">
+            <a class="service-link" [routerLink]="['/autoweb']">
               Részletek a webes oldalról <span class="arrow">→</span>
             </a>
             <div class="service-meta">AI & no-code integrációk</div>
@@ -56,16 +56,15 @@
           <h2 class="service-title">IoT, vezérlés, irányítás & felügyelet</h2>
           <p class="service-text">
             Eszközök, szenzorok és vezérlők összekötése jól átlátható, webes felületekkel.  
-            Fókusz: adatgyűjtés, távoli felügyelet és biztonságos irányítás – ott, ahol
-            a „nyers jel” már kevés, de a teljes SCADA túlzás lenne.
+            Fókusz: adatgyűjtés, távoli felügyelet és irányítás.
           </p>
           <ul class="service-list">
-            <li>Eszközök, szenzorok, gatewayek bekötése (pl. MQTT, REST API, Modbus/TCP)</li>
+            <li>Eszközök, szenzorok, gatewayek bekötése (pl. MQTT, REST API)</li>
             <li>Felügyeleti felületek: webes dashboard, trendek, riasztások</li>
             <li>Jogosultságkezelés, logolás, felhasználóbarát vezérlőpanelek</li>
           </ul>
           <div class="service-footer">
-            <a class="service-link" href="/iot-vezerles.html">
+            <a class="service-link" [routerLink]="['/iot']">
               Részletek az IoT oldalról <span class="arrow">→</span>
             </a>
             <div class="service-meta">IoT eszközök, vezérlés, felügyelet</div>
@@ -87,7 +86,7 @@
             <li>Debug, teszt forgatókönyvek, finomhangolás</li>
           </ul>
           <div class="service-footer">
-            <a class="service-link" href="/viselkedes-fak.html">
+            <a class="service-link" [routerLink]="['/behavior']">
               További részletek <span class="arrow">→</span>
             </a>
             <div class="service-meta">AI logika, játék / robot fókusz</div>
@@ -109,7 +108,7 @@
             <li>Integráció meglévő szoftverekkel, UI-jal</li>
           </ul>
           <div class="service-footer">
-            <a class="service-link" href="/ai-tanitas.html">
+            <a class="service-link" [routerLink]="['/ailearn']">
               AI szolgáltatás részletei <span class="arrow">→</span>
             </a>
             <div class="service-meta">Kísérletektől a működő rendszerig</div>

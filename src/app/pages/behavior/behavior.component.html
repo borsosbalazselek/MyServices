@@ -1,0 +1,275 @@
+<div class="basement">
+    <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Viselkedés fák – AutoRobotTech</span>
+      </div>
+      <nav>
+        <a class="btn" href="https://services.autorobottech.hu/">Szolgáltatás választó</a>
+        <a class="btn" href="#szolgaltatasok">Szolgáltatások</a>
+        <a class="btn" href="#kapcsolat">Kapcsolat</a>
+        <a class="btn primary" href="https://portfolio.autorobottech.hu/" target="_blank" rel="noopener">Portfólió →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container" style="display:grid;grid-template-columns:1.2fr .9fr;gap:2rem;align-items:center">
+        <div>
+          <span class="chip">🧩 Viselkedés fák (behavior trees)</span>
+          <h1>Átlátható döntési logika komplex rendszerekhez.</h1>
+          <p class="muted">
+            Viselkedés fák tervezése, implementálása és finomhangolása játék AI-hoz,
+            robotokhoz és szimulációs rendszerekhez. Nem átláthatatlan if-else erdő,
+            hanem tiszta, dokumentált struktúra.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#kapcsolat">Beszéljünk a projektről</a>
+            <a class="btn" href="https://services.autorobottech.hu/">Vissza a szolgáltatás választóhoz</a>
+          </div>
+          <div style="height:.8rem"></div>
+          <div class="pillrow">
+            <span class="chip">Játék AI logika</span>
+            <span class="chip">Robot / PLC feletti döntési réteg</span>
+            <span class="chip">Szimuláció & tréning rendszerek</span>
+          </div>
+        </div>
+        <aside class="grid" style="gap:1rem">
+          <div class="card" style="grid-column:1/-1">
+            <strong>Miért viselkedés fa?</strong>
+            <p class="muted" style="margin:.4rem 0 0">
+              Modularizált gondolkodás, jól tesztelhető blokkok, könnyű bővíthetőség.
+              A logika olvasható marad fél év múlva is.
+            </p>
+          </div>
+          <div class="card">
+            <strong>Játékok</strong><br>
+            <span class="muted">NPC döntések, ellenség AI, companion viselkedés, scripted jelenetek.</span>
+          </div>
+          <div class="card">
+            <strong>Robotika</strong><br>
+            <span class="muted">Robot / PLC alá-fölé tett behavior tree, állapotgép + BT hibrid megoldások.</span>
+          </div>
+          <div class="card">
+            <strong>Debug & tuning</strong><br>
+            <span class="muted">Teszt-szcenáriók, vizuális debug, logolás, profilozás.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SZOLGÁLTATÁSOK -->
+    <section id="szolgaltatasok">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Mit vállalok viselkedés fák terén?</h2>
+            <p class="muted">Tervezés, implementáció, refaktor és debug – a meglévő motorodba illesztve.</p>
+          </div>
+        </div>
+        <div class="grid cards">
+          <div class="card">
+            <h3>Tervezés & architektúra</h3>
+            <p class="muted">
+              Az üzleti/játék igényeidből építjük fel a viselkedés fa struktúrát:
+              node-típusok, részfák, fallback logika, prioritások.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Implementáció meglévő engine-ben</h3>
+            <p class="muted">
+              Saját engine, Unity, Unreal vagy egyéb keretrendszer: implementálom a fát
+              a már használt környezetedbe, dokumentált interfészekkel.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Refaktor & clean-up</h3>
+            <p class="muted">
+              Ha már van egy “if-else őserdőd” vagy kaotikus állapotgéped, segítek azt
+              behavior tree-re alakítani, modulárisabbra, érthetőbbre.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Debug & teszt forgatókönyvek</h3>
+            <p class="muted">
+              Logolás, vizuális jelölések, teszt case-ek: hogyan döntött a fa, hol akadt el,
+              mivel lehet egyszerűsíteni vagy optimalizálni.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Hibrid megoldások</h3>
+            <p class="muted">
+              Behavior tree + state machine + GOAP – ha a rendszered igényli, kombinált
+              megközelítést tervezünk, nem dogmatikusan csak egy módszert erőltetve.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Dokumentáció & átadás</h3>
+            <p class="muted">
+              Diagramok, kommentek, kézikönyv a csapatnak. Nem csak működő kód,
+              hanem érthető, átadható tudás.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FELHASZNÁLÁSI TERÜLETEK -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Hol érdemes viselkedés fákat használni?</h2>
+            <p class="muted">Néhány tipikus szituáció, ahol sokat számít az átlátható logika.</p>
+          </div>
+        </div>
+        <div class="grid cards">
+          <div class="card">
+            <h3>Játék AI</h3>
+            <p class="muted">
+              Ellenségek, NPC-k, companion karakterek, boss fight logika –
+              minden, ami döntési ágat tartalmaz és gyakran változik fejlesztés közben.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Robot & PLC feletti döntés</h3>
+            <p class="muted">
+              A fizikai mozgást alacsony szintű vezérlés intézi, a viselkedés fa pedig
+              eldönti, mikor mi történjen – emberközeli logikával megfogalmazva.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Szimuláció és tréning</h3>
+            <p class="muted">
+              Szimulált ügynökök, tréning környezetek, oktatási felületek.  
+              A behavior tree transzparens, így jól magyarázható is.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLYAMAT -->
+    <section id="folyamat">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Hogyan dolgozunk együtt?</h2>
+            <p class="muted">Rövid, átlátható folyamat – engine-től függetlenül.</p>
+          </div>
+        </div>
+        <div class="grid steps">
+          <div class="step" data-step="1">
+            <h3>Feltérképezés</h3>
+            <p class="muted">
+              Átnézzük a célokat, meglévő logikát, engine-t, technikai korlátokat.
+              Eldől, hol van értelme behavior tree-t használni – és hol nem.
+            </p>
+          </div>
+          <div class="step" data-step="2">
+            <h3>Tervezés & prototípus</h3>
+            <p class="muted">
+              Közös nyelvet találunk a dizájnerek, fejlesztők és “üzleti oldal” között.
+              Diagram, első fa, pilot implementáció.
+            </p>
+          </div>
+          <div class="step" data-step="3">
+            <h3>Implementálás & finomhangolás</h3>
+            <p class="muted">
+              Elkészül a végleges fa, debug eszközökkel, logolással.  
+              Teszt-szcenáriók, optimalizálás, dokumentált átadás a csapatodnak.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GYIK -->
+    <section>
+      <div class="container">
+        <h2>Gyakori kérdések</h2>
+        <details>
+          <summary>Mennyi idő egy viselkedés fa projekt?</summary>
+          <p class="muted">
+            Egyszerűbb AI vagy kisebb részfa: 1–2 hét.  
+            Nagyobb játék/robot projekt, több ügynökkel: több iterációban, 3–6 hét+
+            is lehet. A pontos ütemezés mindig az igényfelmérés után derül ki.
+          </p>
+        </details>
+        <details>
+          <summary>Csak új rendszernél van értelme, vagy meglévőt is tudsz refaktorálni?</summary>
+          <p class="muted">
+            Mindkettő. Gyakran pont egy meglévő, nehezen karbantartható logika miatt
+            érdemes viselkedés fára váltani – fokozatosan, modulonként.
+          </p>
+        </details>
+        <details>
+          <summary>Milyen motorokkal / technológiákkal dolgozol?</summary>
+          <p class="muted">
+            Saját engine, Unity, Unreal, egyedi C++/C#/Python alapú rendszerek,
+            robotvezérlő oldalon pedig a meglévő PLC/robot stackhez igazodva.
+            A lényeg: a behavior tree logika illeszkedjen ahhoz, amit már használsz.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- KAPCSOLAT -->
+    <section id="kapcsolat">
+      <div class="container" style="display:grid;grid-template-columns:1.1fr .9fr;gap:1.25rem;align-items:start">
+        <form class="card" onsubmit="event.preventDefault();alert('Köszönöm! A végleges verzióban állíts be saját űrlapfeldolgozást (backend / Formspree / Make).');">
+          <h2>Írj a viselkedés fa projektedről</h2>
+          <div class="row">
+            <div>
+              <label for="name">Név</label>
+              <input id="name" required />
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input id="email" type="email" required />
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="context">Környezet / engine</label>
+              <input id="context" placeholder="Pl. Unity, Unreal, saját C++ engine, robot stack..." />
+            </div>
+            <div>
+              <label for="scope">Tartomány</label>
+              <input id="scope" placeholder="Pl. 5–10 NPC, 1 robotcella, tréning szimuláció..." />
+            </div>
+          </div>
+          <div>
+            <label for="msg">Rövid leírás</label>
+            <textarea id="msg" placeholder="Mi a cél? Van már meglévő logika, dokumentáció? Határidő?"></textarea>
+          </div>
+          <button class="btn primary" type="submit">Küldés (demó)</button>
+          <p class="muted" style="font-size:.85rem;margin:.6rem 0 0">
+            Az űrlap jelenleg demó módon működik. Élesítéskor kösd be a saját backend / automatizmusodhoz.
+          </p>
+        </form>
+        <aside class="card">
+          <h3>Elérhetőség</h3>
+          <p class="muted">
+            E-mail: <a href="mailto:info@autorobottech.hu">info&#64;autorobottech.hu</a><br>
+            Portfólió: <a href="https://portfolio.autorobottech.hu/" target="_blank" rel="noopener">portfolio.autorobottech.hu</a>
+          </p>
+          <p class="muted">
+            Ha tudsz, már az első üzenetben csatolj rövid dokumentumot / diagramot vagy
+            Git repo linket – így gyorsabban látom, hol tud a behavior tree a legtöbbet segíteni.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <div>© <span id="y"></span> AutoRobotTech – Viselkedés fák</div>
+      <div class="muted">Adatkezelés • Sütik • Impresszum</div>
+    </div>
+  </footer>
+</div>
